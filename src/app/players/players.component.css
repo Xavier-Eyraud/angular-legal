@@ -1,0 +1,42 @@
+.battle{
+  background-color: black;
+}
+h2{
+  text-align: center;
+}
+.border-bottom{
+  padding: 1rem;
+}
+input {
+  padding: .5rem;
+  margin-right: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+button {
+  padding: .5rem;
+  margin-right: 1rem;
+  color:white;
+  width: 100%;
+}
+
+.update {
+  background-color:rgb(210, 115, 16);
+}
+.update:hover{
+  background-color:rgb(230, 115, 16);
+}
+
+.delete {
+  background-color:rgb(166, 38, 38);
+}
+.delete:hover, :invalid{
+  background-color:rgb(196, 38, 38);
+}
+
+
+  
+
+  
+  
+  

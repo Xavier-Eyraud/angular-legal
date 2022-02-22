@@ -1,0 +1,9 @@
+.toast-wrapper{
+    top:3rem;
+    right:.5rem;
+    position: fixed;
+}
+.toast{
+    color: rgb(61, 55, 55);
+    background-color: rgb(212, 212, 188);
+}

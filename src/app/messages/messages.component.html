@@ -1,0 +1,5 @@
+<div class="toast-wrapper" *ngIf="messageService.messages.length">
+    <ngb-alert class="toast" *ngFor='let message of messageService.messages'>
+        {{ message }}
+    </ngb-alert>
+</div>

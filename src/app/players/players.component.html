@@ -1,0 +1,37 @@
+<button type="button" class="battle"
+  (click)="battle(players)">
+  Lancer une bataille
+</button>
+
+<div class="container">
+  <div class="row border-bottom align-items-end" *ngFor="let player of players">
+    <div class="col-sm-4 col-md-2">
+      <label for="id">Id</label>
+      <input type="number" readonly placeholder="Id" min="1" [(ngModel)]="player.id" name="id">
+    </div>
+    <div class="col-sm-4 col-md-2">
+      <label for="name">Nom</label>
+      <input type="text" placeholder="Nom(3-25)" minlength="3" maxlength="25" [(ngModel)]="player.name" name="name">
+    </div>
+    <div class="col-sm-4 col-md-2">
+      <label for="attack">Attaque</label>
+      <input type="number" placeholder="Attaque(1-100)" min="1" max="100" [(ngModel)]="player.attack" name="attack">
+    </div>
+    <div class="col-sm-4 col-md-2">
+      <label for="defense">Défense</label>
+      <input type="number" placeholder="Défense(1-100" min="1" max="100" [(ngModel)]="player.defense" name="defense">
+    </div>
+    <div class="col-sm-4 col-md-2">
+      <button type="button" class="update"
+        *ngIf="player.attack<=100 && player.attack>0 && player.defense<=100 && player.defense>0 && (player.name).length>=3 && (player.name).length<=25" (click)="updatePlayer(player)">
+        Updater
+      </button>
+    </div>
+    <div class="col-sm-4 col-md-2">
+      <button type="button" class="delete"
+        (click)="deletePlayer(player)">
+        Supprimer
+      </button>
+    </div>
+  </div>
+</div>
